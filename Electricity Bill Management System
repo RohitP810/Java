@@ -23,6 +23,18 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.*;
 import java.io.*;
 
+
+//Exception Handling
+class InvalidCredentialException extends Exception  
+{  
+    public InvalidCredentialException (String str)  
+    {  
+        // calling the constructor of parent Exception  
+        super(str);  
+    }  
+}  
+//!Exception Handling
+
 //Class for Reading functions
 class excelRead{
     //Details of each individuals
@@ -362,6 +374,10 @@ public class App {
         System.out.print("\033[H\033[2J");  
         System.out.flush();  
     } 
+    /**
+     * @param args
+     * @throws IOException
+     */
     public static void main(String args[]) throws IOException {
         
         //Variable Declarations
@@ -373,7 +389,7 @@ public class App {
         String userName;
         String passWord;
         final String filePath = "C:\\Users\\msi\\Desktop\\java.xlsx";//change this 
-        boolean Admin = true;
+        boolean Admin = false;
         //!Variable Declarations
 
         //Authentication
@@ -382,12 +398,27 @@ public class App {
         System.out.println("Enter Password : ");
         passWord = in.nextLine();
         clearScreen();
-        if(!(passWord.equals("1245")&&userName.equals("Admin"))) 
+        try{
+        if((passWord.equals("1245")&&userName.equals("Admin"))) 
         {
-            throw new ArithmeticException("Invalid Credentials");
+            Admin = true;
+        }
+        else{
+            if(passWord.equals("1245")){
+                throw new InvalidCredentialException("UserName Invalid");
+            }
+            else if(userName.equals("Admin")){
+                throw new InvalidCredentialException("Invalid Password");
+            }
+            else{
+                throw new InvalidCredentialException("Invalid Credentials");
+            }
+        }
+        }
+        catch(InvalidCredentialException e){
+            System.out.println(e);  
         }
         //!Authentication
-
         //UI
         while(Admin) 
         {
@@ -474,4 +505,3 @@ public class App {
         //!UI
     }  
 }
-
