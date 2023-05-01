@@ -1,0 +1,1428 @@
+/*BANKING SYSTEM PROJECT 
+https://www.javatpoint.com/banking-application-in-java#:~:text=println(%221.-,Display%20all%20account%20details%20%5Cn%202.,print(%22Enter%20account%20no.
+*/
+
+
+/*public class test {
+
+	public static void main(String[] args) {
+		int arr[]=new int[5];
+		int arr1[]={30,40,50,60,70};
+		arr[0]=10;
+		arr[1]=20;
+		arr[2]=30;
+		arr[3]=40;
+		arr[4]=50;
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+		System.out.println(arr[3]);
+		System.out.println(arr[4]);
+		System.out.println(arr1[0]);
+		System.out.println(arr1[1]);
+		System.out.println(arr1[2]);
+		System.out.println(arr1[3]);
+		System.out.println(arr1[4]);
+		for(int i=0;i<arr1.length;i++)
+			System.out.println(arr1[i]);		
+	}
+
+}*/
+
+/*Write a program to find the average of array elements*/
+
+/*public class test {
+
+	public static void main(String[] args) {
+		int arr1[]={30,40,50,60,70},tot=0,avg=0;
+		for(int i=0;i<arr1.length;i++)
+		{
+			tot=tot + arr1[i];	
+		}
+		avg=tot/arr1.length;
+		System.out.println("Avg = "+avg+"%");
+}
+
+}*/
+
+/* Write a program to create a Jagged array*/
+
+/*public class test {
+public static void main(String[] args) 
+{
+
+		int arr[][]=new int[3][];
+		arr[0] = new int[3];
+		arr[1] = new int[4];
+		arr[2] = new int[3];
+		arr[0][0]=0;
+		arr[0][1]=1;
+		arr[0][2]=2;
+		arr[1][0]=3;
+		arr[1][1]=4;
+		arr[1][2]=5;
+		arr[1][3]=6;
+		arr[2][0]=7;
+		arr[2][1]=8;
+		//int arr[][]={{0,1,2},{3,4,5,6},{7,8}};
+		System.out.println("jagged array");
+        	for (int i = 0; i < arr.length; i++) 
+		{
+            		for (int j = 0; j < arr[i].length; j++)
+                		System.out.print(arr[i][j] + " ");
+            		System.out.println();
+        	}
+
+}
+}*/
+
+/*write a program to check if a number is even +ve or even -ve or odd +ve or odd -ve or 0*/
+
+/*public class test {
+public static void main(String[] args) 
+{
+
+		int a=-20;
+		if(a%2==0 && a>0)
+		System.out.println("Even & +ve");
+		else if(a%2!=0 && a>0)
+		System.out.println("Odd & +ve");
+		else if(a%2==0 && a<0)
+		System.out.println("Even & -ve");
+		else if(a%2!=0 && a<0)
+		System.out.println("Odd & -ve");
+		else
+		System.out.println("Number is 0!");
+}
+}*/
+
+/*import java.util.Scanner;
+
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+
+	System.out.print("Enter the value of n: ");
+	int n = in.nextInt();
+	int count = 1;
+	System.out.println("Using FOR loop");
+	for(int i=0; count<=n ; i++)
+	{
+		if(i%2==0) 
+		{
+			System.out.println(i);
+			count++;
+		}
+	}
+	
+	count=1;
+	System.out.println("Using WHILE loop");
+	int i=0;
+	while(count<=n)
+	{
+		if(i%2==0) 
+		{
+			System.out.println(i);
+			count++;
+		}
+		i++;
+	}
+	
+	System.out.println("Using DO WHILE loop");
+	i=0;
+	count=1;
+	do
+	{
+		if(i%2==0) 
+		{
+			System.out.println(i);
+			count++;
+		}
+		i++;
+	}while(count<=n);
+}
+}*/
+
+
+/*import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the value of n: ");
+	int n = in.nextInt();
+	boolean flag=false;
+	for(int i=2;i<=n/2;i++)
+	{
+		if(n%i==0)
+		{
+			flag=true;
+			break;
+		}
+	}
+	if(!flag)
+		System.out.print("Entered value is a prime number!");
+	else
+		System.out.print("Entered value is not a prime number!");
+	
+}
+}*/
+
+/*import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter total number of elements n: ");
+	int n = in.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<n;i++)
+	{
+		arr[i]=in.nextInt();
+	}
+	System.out.println("Elements in even position of the given array: ");
+	for(int i=0;i<n;i++)
+	{
+		if(i%2==0)
+		{
+			System.out.print(arr[i]+" ");
+		}
+	}
+}
+}*/
+
+
+/*import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the number: ");
+	int n = in.nextInt();
+	int r, rev=0,temp;
+	temp=n;
+	while(n>0)
+	{    
+	  r=n%10;  //getting remainder  
+	  rev=(rev*10)+r;    
+	  n=n/10;    
+	}    
+	if(temp==rev)    
+		System.out.println("palindrome");    
+	else    
+		System.out.println("not palindrome");    
+}
+}*/
+
+/*import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the number: ");
+	int n = in.nextInt();
+	int sr = (int)Math.sqrt(n);
+	if((sr * sr)==n)
+		System.out.println("Yes");
+	else
+		System.out.println("No");
+}
+}*/
+
+/*import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the number: ");
+	int n = in.nextInt();
+	int i, j;  
+    for(i=0; i<n; i++) 
+    { 
+    	for(j=2*(n-i); j>=0; j--)  
+        {           
+            System.out.print(" ");
+        } 
+        for(j=0; j<=i; j++)
+        {       
+            System.out.print("* "); 
+        }           
+        System.out.println(); 
+    }  
+}
+}*/
+
+/*import java.io.*;
+import java.util.*;
+
+public class test {
+
+    public static void main(String[] args) {
+            
+        Scanner in = new Scanner(System.in);
+        float arr[]=new float[3],sum=0;
+        float avg;
+        for(int i=0;i<3;i++)
+        {
+            arr[i]=in.nextInt();
+        }
+        for(int i=0;i<3;i++)
+        {
+            sum+=arr[i];
+        }
+        avg=sum/3;
+        if(sum%3==0)
+        {
+            System.out.format("%.1f",avg);    
+        }
+        else{
+            String num = String.format("%.2f", avg);
+            num = num.substring(0, num.length() - 1);
+            System.out.format(num);
+        }
+    }
+}*/
+
+/*Write a program to create a class stack which contains an integer array that can hold 10 values and a variable top that contains the index of the top element store the values in the array and increment the value of top*/
+
+//Write a program to add two int, 3 int, 2 floats, 1int 1 float, 1int 1float 1double create a class calculate to perform the operations stated above using function overloading name the functions as addd
+
+/*import java.io.*;
+import java.util.*;
+
+class calculate{
+    
+    void add(int a, int b){
+	int res = a+b;
+	System.out.println(res);
+    }
+
+    void add(int a, int b, int c){
+	int res = a+b+c;
+	System.out.println(res);
+    }	
+
+    void add(float a, float b){
+	float res = a+b;
+	System.out.println(res);
+    }
+
+    void add(int a, float b){
+	float res = a+b;
+	System.out.println(res);
+    }
+
+    void add(int a, float b, double c){
+	double res = a+b+c;
+	System.out.println(res);
+    }
+
+}
+
+public class test {
+
+    public static void main(String[] args) {
+    	calculate c=new calculate();
+		c.add(1,1);
+		c.add(1,1,1);
+		c.add(2.5f,2.5f);
+		c.add(2,1.5f);
+		c.add(2,2.5f,2.5);
+    }
+}*/
+
+
+/*import java.io.*;
+import java.util.*;
+
+class employee{
+	int eid;
+	char rank;
+	void get(int id, char r) {
+		eid=id;
+		rank=r;
+	}
+	void print() {
+		System.out.println("Employee ID: "+eid);
+		System.out.println("Rank: "+rank);
+	}
+}
+
+public class test {
+
+    public static void main(String[] args) {
+    	int eid[]= {10,20,30,40,50};
+    	char rank[]={'A','B','C','D','E'};
+    	employee e[] = new employee[5];
+    	for(int i=0;i<5;i++)
+    	{
+    		e[i].get(eid[i],rank[i]);
+    		e.print();
+    	}
+    }
+}*/
+
+
+/*Write a program to create a enum day with the enumuration constant as days of a week, create a class check 
+ with one constructor which will take object as an argument declare a data me,ber D of type enum and a function
+ void print() which uses the switch case to print the day selected otherwise it will print not a day of the 
+ week create a main method class to take string input from the user as the day of the week pass this string
+ as an argument to the constructor and call the print function to print the appropriate day entered by 
+ the user */ 
+
+/*import java.util.*;
+import java.lang.*;
+
+enum day{
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY;
+}
+
+class check{
+	day D ;
+
+	check(day S) {
+		D=S;
+		print();
+	}
+	void print() {
+		switch(D) {
+			case SUNDAY: System.out.println("SUNDAY IS THE 1ST DAY OF THE WEEK!");break;
+			case MONDAY: System.out.println("MONDAY IS THE 2ND DAY OF THE WEEK!");break;
+			case TUESDAY: System.out.println("TUESDAY IS THE 3RD DAY OF THE WEEK!");break;
+			case WEDNESDAY: System.out.println("WEDNESDAY IS THE 4TH DAY OF THE WEEK!");break;
+			case THURSDAY: System.out.println("THURSDAY IS THE 5TH DAY OF THE WEEK!");break;
+			case FRIDAY: System.out.println("FRIDAY IS THE 6TH DAY OF THE WEEK!");break;
+			case SATURDAY: System.out.println("SATURDAY IS THE 7TH DAY OF THE WEEK!");break;
+			default: System.out.println("Not a day of the week!");
+		}
+	}
+}
+
+public class test {
+
+    public static void main(String[] args) {
+    	Scanner in = new Scanner(System.in);
+    	System.out.println("Enter the string: ");
+    	String s = in.nextLine();
+    	check c = new check(day.valueOf(s));
+    }
+}*/
+
+
+//import java.util.*;
+//
+//class output{
+//	int count=10;
+//	char alph[]= {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+//	void ouput(int a) {
+//		if(a<=9) {
+//			System.out.println(a);
+//		}
+//		else {
+//			System.out.println(alph[a-count]+" for "+a);
+//		}
+//	}
+//}
+//
+//public class test {
+//
+//    public static void main(String[] args) {
+//    	Scanner sc = new Scanner(System.in);
+//    	System.out.println("Enter any number between 0 and 35: ");
+//    	int a = sc.nextInt();
+//    	output op = new output();
+//    	op.ouput(a);
+//    }
+//}
+
+
+//import java.util.*;
+//class Sorting{
+//	int arr1[]=new int[20];
+//	int arr2[]=new int[20];
+//	int arr3[]=new int[20];
+//	void Sorting(int arra[], int arrb[]){
+//		for(int i=0;i<arra.length;i++) {
+//			for(int j=0;j<arra.length;j++) {
+//				int temp = arr1[i];
+//				arra[i]=arra[j];
+//				arra[j]=temp;
+//			}
+//		}
+//		arr1=arra;
+//		for(int i=0;i<arrb.length;i++) {
+//			for(int j=0;j<arrb.length;j++) {
+//				int temp = arrb[i];
+//				arrb[i]=arrb[j];
+//				arrb[j]=temp;
+//			}
+//		}
+//		arr2=arrb;
+//		for(int i=0;i<arra.length;i++) {
+//			if(arra[i]<arrb[i]) {
+//				arr3[i]=arra[i];
+//				arr3[i+1]=arrb[i];
+//			}
+//		}
+//		if(arra.length<arrb.length) {
+//			for(int i=arra.length-1;i<arrb.length;i++) {
+//				arr3[i]=arrb[i];
+//			}
+//		}
+//		System.out.println(arr3);
+//	}
+//}
+//
+//public class test{
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int n1 = sc.nextInt();
+//		int n2 = sc.nextInt();
+//		int arr1[] = new int[20];
+//		int arr2[] = new int[20];
+//		for(int i=0;i<n1;i++) {
+//			int arr1[i] = sc.nextInt();
+//		}
+//		for(int i=0;i<n2;i++) {
+//			int arr2[i] = sc.nextInt();
+//		}
+//		Sorting srt = new Sorting();
+//		srt.Sorting(arr1, arr2);
+//}
+
+/*import java.util.*;
+class Shape {
+	  double d1, d2;
+
+	  public Shape(double d1, double d2) {
+	    this.d1 = d1;
+	    this.d2 = d2;
+	  }
+
+	  public double area() {
+	    return 0.0;
+	  }
+	}
+
+	class Rectangle extends Shape {
+	  public Rectangle(double d1, double d2) {
+	    super(d1, d2);
+	  }
+
+	  public double area() {
+	    return d1 * d2;
+	  }
+	}
+
+	class Triangle extends Shape {
+	  public Triangle(double d1, double d2) {
+	    super(d1, d2);
+	  }
+
+	  public double area() {
+	    return 0.5 * d1 * d2;
+	  }
+	}
+
+	public class test {
+	  public static void main(String[] args) {
+	    Rectangle rect = new Rectangle(5.0, 10.0);
+	    System.out.println("Area of Rectangle: " + rect.area());
+
+	    Triangle tri = new Triangle(5.0, 10.0);
+	    System.out.println("Area of Triangle: " + tri.area());
+	  }
+	}*/
+
+/*import java.util.*;
+class Box {
+     int d1;
+     int d2;
+    
+    public Box(int d1, int d2) {
+    	this.d1 = d1;
+        this.d2 = d2;
+    }
+   
+    public int getarea() {
+        return d1 * d2;
+    }
+    
+}
+
+public class test {
+	  public static void main(String[] args) {
+		  Box b = new Box(5,10);
+		  int a  = b.getarea();
+		  System.out.println("Area = " + a);
+	  }
+}*/
+
+//create a interface vehicle with 3 methods void gearChange(int x) void speedIncrease(int x) void break(int x) implement this interface in class byclycle,bike and car you can create ur own datamebers and member function
+
+/*import java.util.*;
+
+interface vehicle
+{
+	void gearChange(int x);
+	void speedIncrease(int x);
+	void Break(int x);
+}
+
+class bycycle implements vehicle
+{
+	int gear = 0;
+	int speed = 0;
+	public void gearChange(int x) 
+	{
+		gear += x;
+		if(x>0)
+			System.out.println("Cycle Gear increased!!!\nGear: "+gear+"\nSpeed: "+speed);
+		else
+			System.out.println("Cycle Gear decreased!!!\nGear: "+gear+"\nSpeed: "+speed);
+		if(gear == 0 && x<0)
+			System.out.println("Cycle Gear cant be decreased!!!\nGear: "+gear+"\nSpeed: "+speed);
+	}
+	
+	public void speedIncrease(int x) 
+	{
+		speed +=x;
+		System.out.println("Cycle Speed increased!!!\nGear: "+gear+"\nSpeed: "+speed);
+		if(gear == 0)
+			System.out.println("Cycle Increase the gear first!!!\nGear: "+gear+"\nSpeed: "+speed);
+	}
+	
+	public void Break(int x) 
+	{
+		speed -= x;
+		System.out.println("Cycle Speed decreased by "+x+" !!!\nGear: "+gear+"\nSpeed: "+speed);
+	}
+}
+
+class bike implements vehicle
+{
+	int gear = 0;
+	int speed = 0;
+	public void gearChange(int x) 
+	{
+		gear += x;
+		if(x>0)
+			System.out.println("Bike Gear increased!!!\nGear: "+x+"\nSpeed: "+speed);
+		else
+			System.out.println("Bike Gear decreased!!!\nGear: "+x+"\nSpeed: "+speed);
+		if(gear == 0 && x<0)
+			System.out.println("Bike Gear cant be decreased!!!\nGear: "+x+"\nSpeed: "+speed);
+	}
+	
+	public void speedIncrease(int x) 
+	{
+		speed +=x;
+		System.out.println("Bike Speed increased!!!\nGear: "+x+"\nSpeed: "+speed);
+		if(gear == 0)
+			System.out.println("Bike Increase the gear first!!!\nGear: "+x+"\nSpeed: "+speed);
+	}
+	
+	public void Break(int x) 
+	{
+		speed -= x;
+		System.out.println("Bike Speed decreased by "+x+" !!!\nGear: "+x+"\nSpeed: "+speed);
+	}
+}
+
+class car implements vehicle
+{
+	int gear = 0;
+	int speed = 0;
+	public void gearChange(int x) 
+	{
+		gear += x;
+		if(x>0)
+			System.out.println("Car Gear increased!!!\nGear: "+x+"\nSpeed: "+speed);
+		else
+			System.out.println("Car Gear decreased!!!\nGear: "+x+"\nSpeed: "+speed);
+		if(gear == 0 && x<0)
+			System.out.println("Car Gear cant be decreased!!!\nGear: "+x+"\nSpeed: "+speed);
+	}
+	
+	public void speedIncrease(int x) 
+	{
+		speed +=x;
+		System.out.println("Car Speed increased!!!\nGear: "+x+"\nSpeed: "+speed);
+		if(gear == 0)
+			System.out.println("Car Increase the gear first!!!\nGear: "+x+"\nSpeed: "+speed);
+	}
+	
+	public void Break(int x) 
+	{
+		speed -= x;
+		System.out.println("Car Speed decreased by "+x+" !!!\nGear: "+x+"\nSpeed: "+speed);
+	}
+}
+
+public class test 
+{
+	  public static void main(String[] args) 
+	  {
+		  bycycle bc = new bycycle();
+		  bike bk = new bike();
+		  car c = new car();
+		  
+		  bc.gearChange(1);
+		  bc.speedIncrease(5);
+		  bc.Break(5);
+		  bc.gearChange(-1);
+		  
+		  bk.gearChange(1);
+		  bk.speedIncrease(5);
+		  bk.Break(5);
+		  bk.gearChange(-1);
+		  
+		  c.gearChange(1);
+		  c.speedIncrease(20);
+		  c.Break(5);
+		  c.gearChange(1);
+		  c.speedIncrease(30);
+		  c.Break(30);
+		  c.gearChange(-2);
+	  }
+}*/
+
+
+/*import java.util.*;
+
+interface add_sub
+{
+	void add(double x, double y);
+	void sub(double x, double y);
+}
+
+interface mull_div
+{
+	void mul(double x, double y);
+	void div(double x, double y);
+}
+
+interface calculator extends add_sub,mull_div
+{
+	void printResult(double res);
+}
+
+class mycalc implements calculator
+{
+	public void add(double x, double y)
+	{
+		System.out.print(x + "+" + y);
+		printResult(x+y);
+	}
+	public void sub(double x, double y)
+	{
+		System.out.print(x + "-" + y);
+		printResult(x-y);
+	}
+	public void mul(double x, double y)
+	{
+		System.out.print(x + "*" + y);
+		printResult(x*y);
+	}
+	public void div(double x, double y)
+	{
+		System.out.print(x + "/" + y);
+		printResult(x/y);
+	}
+	public void printResult(double res)
+	{
+		System.out.println(" = "+res);
+	}
+}
+
+public class test 
+{
+	  public static void main(String[] args) 
+	  {
+		  mycalc c = new mycalc();
+		  c.add(5, 5);
+		  c.sub(5, 5);
+		  c.mul(5, 5);
+		  c.div(5, 5);
+	  }
+}*/
+
+
+//Multiple inheritance
+
+//import java.util.*;
+//interface Exam
+//{
+//	public void display();
+//}
+//
+//class student
+//{
+//	String name;
+//	int roll_number;
+//	double marks1,marks2;
+//	student(String n, int r, double m1, double m2)
+//	{
+//		name=nl
+//		roll_number=r;
+//		marks1=m1;
+//		marks=m2;
+//		
+//	}
+//}
+
+
+//INNER CLASS
+//import java.util.*;
+//class outer
+//{
+//	int x=10;
+//	void getvalue() { int x =50;
+//	class inner
+//	{
+//		int y;
+//		inner()
+//		{
+//			
+//			z=10;
+//			y=0;
+//		}
+//		void sum()
+//		{
+//			System.out.println("Sum: "+(x+y+z));
+//		}
+//	}
+//	inner obj2 = new inner();
+//	obj2.sum();
+//	}
+//}
+//public class test 
+//{
+//	  public static void main(String[] args) 
+//	  {
+//		  outer obj1 = new outer();
+//		  obj1.getvalue();
+//	  }
+//}
+
+//AnonymousInnerClass
+//import java.util.*;
+//interface marks
+//{
+//	int m=80;
+//	public void getmarks();
+//}
+//public class test 
+//{
+//	  public static void main(String[] args) 
+//	  {
+//		  marks objm = new marks()
+//		  {
+//			  public void getmarks()
+//			  {
+//				  System.out.println("Marks: "+m);
+//			  }
+//		  };
+//		  objm.getmarks();
+//	  }
+//}	  
+
+
+//abstract class and anonymous class
+//import java.util.*;
+//abstract class marks
+//{
+//	int m1=50;
+//	int m2=60;
+//	int m3=70;
+//	abstract void avg();
+//}
+//public class test 
+//{
+//	  public static void main(String[] args) 
+//	  {
+//		  marks objm =  new marks()
+//		  {
+//			  public void avg()
+//			  {
+//				  System.out.println("avg = "+(m1+m2+m3)/3);
+//			  }
+//		  };
+//		  objm.avg();
+//	  }
+//}
+
+
+//Concrete class
+//import java.util.*;
+//class marks
+//{
+//	public void display() {
+//		System.out.println("HI");
+//	}
+//	public void print() {
+//		System.out.println("HELLO");
+//	}
+//}
+//public class test 
+//{
+//	  public static void main(String[] args) 
+//	  {
+//		  marks objm =  new marks()
+//		  {
+//			  public void display()
+//			  {
+//				  System.out.println("hello");
+//			  }
+//			  public void print() {
+//					System.out.println("hi");
+//				}
+//		  };
+//		  objm.display();
+//		  objm.print();
+//	  }
+//}
+
+
+//exception handling
+//import java.util.*;
+//import javax.io.*;
+//public class test
+//{
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		int n1 = sc.nextInt();
+//		try
+//		{
+//		if(n1<18)
+//			throw new ArithmeticException("Age is less than 18");
+//		else
+//			System.out.println("You can vote");
+//		}
+//		catch(ArithmeticException e) {
+//			System.out.println("get lost!");
+//		}
+//		finally
+//		{
+//		System.out.println("End");
+//		}
+//	}
+//}
+
+//import java.util.*;
+//public class test
+//{
+//	public static void main(String[] args)
+//	{
+//		Scanner in = new Scanner(System.in);
+//		int b = in.nextInt();
+//		int h =in.nextInt();
+//		int p = in.nextInt();
+//		if(b>20||h>20||p>20) {
+//			System.out.println("Invalid Input");
+//		}
+//		else {
+//			try {
+//				if((b*b)*(p*p)==(h*h)) {
+//					System.out.println("Valid Triangle");
+//				}
+//			}
+//			catch(ArithmeticException e) {
+//				System.out.println("Invalid Triangle");
+//			}
+//		}
+//	}
+//}
+
+
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        try {
+//            int num1 = scanner.nextInt();
+//            int num2 = scanner.nextInt();
+//
+//            if (num2 == 0) {
+//                throw new ArithmeticException("/ by zero");
+//            }
+//
+//            int result = num1 / num2;
+//            System.out.println(result);
+//
+//        } 
+//        catch (ArithmeticException e) {
+//            System.out.println(e);
+//
+//        } 
+//        catch (Exception e) {
+//            System.out.println("java.util.InputMismatchException");
+//        }
+//    }
+//}
+
+
+-/*BANKING SYSTEM PROJECT 
+https://www.javatpoint.com/banking-application-in-java#:~:text=println(%221.-,Display%20all%20account%20details%20%5Cn%202.,print(%22Enter%20account%20no.
+*/
+
+
+/*public class test {
+
+	public static void main(String[] args) {
+		int arr[]=new int[5];
+		int arr1[]={30,40,50,60,70};
+		arr[0]=10;
+		arr[1]=20;
+		arr[2]=30;
+		arr[3]=40;
+		arr[4]=50;
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+		System.out.println(arr[3]);
+		System.out.println(arr[4]);
+		System.out.println(arr1[0]);
+		System.out.println(arr1[1]);
+		System.out.println(arr1[2]);
+		System.out.println(arr1[3]);
+		System.out.println(arr1[4]);
+		for(int i=0;i<arr1.length;i++)
+			System.out.println(arr1[i]);		
+	}
+
+}*/
+
+/*Write a program to find the average of array elements*/
+
+/*public class test {
+
+	public static void main(String[] args) {
+		int arr1[]={30,40,50,60,70},tot=0,avg=0;
+		for(int i=0;i<arr1.length;i++)
+		{
+			tot=tot + arr1[i];	
+		}
+		avg=tot/arr1.length;
+		System.out.println("Avg = "+avg+"%");
+}
+
+}*/
+
+/* Write a program to create a Jagged array*/
+
+/*public class test {
+public static void main(String[] args) 
+{
+
+		int arr[][]=new int[3][];
+		arr[0] = new int[3];
+		arr[1] = new int[4];
+		arr[2] = new int[3];
+		arr[0][0]=0;
+		arr[0][1]=1;
+		arr[0][2]=2;
+		arr[1][0]=3;
+		arr[1][1]=4;
+		arr[1][2]=5;
+		arr[1][3]=6;
+		arr[2][0]=7;
+		arr[2][1]=8;
+		//int arr[][]={{0,1,2},{3,4,5,6},{7,8}};
+		System.out.println("jagged array");
+        	for (int i = 0; i < arr.length; i++) 
+		{
+            		for (int j = 0; j < arr[i].length; j++)
+                		System.out.print(arr[i][j] + " ");
+            		System.out.println();
+        	}
+
+}
+}*/
+
+/*write a program to check if a number is even +ve or even -ve or odd +ve or odd -ve or 0*/
+
+/*public class test {
+public static void main(String[] args) 
+{
+
+		int a=-20;
+		if(a%2==0 && a>0)
+		System.out.println("Even & +ve");
+		else if(a%2!=0 && a>0)
+		System.out.println("Odd & +ve");
+		else if(a%2==0 && a<0)
+		System.out.println("Even & -ve");
+		else if(a%2!=0 && a<0)
+		System.out.println("Odd & -ve");
+		else
+		System.out.println("Number is 0!");
+}
+}*/
+
+
+/*Write a prgrm to print n even numbers using for,while and do while loop.*/
+
+/*import java.util.Scanner;
+
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+
+	System.out.print("Enter the value of n: ");
+	int n = in.nextInt();
+	int count = 1;
+	System.out.println("Using FOR loop");
+	for(int i=0; count<=n ; i++)
+	{
+		if(i%2==0) 
+		{
+			System.out.println(i);
+			count++;
+		}
+	}
+	
+	count=1;
+	System.out.println("Using WHILE loop");
+	int i=0;
+	while(count<=n)
+	{
+		if(i%2==0) 
+		{
+			System.out.println(i);
+			count++;
+		}
+		i++;
+	}
+	
+	System.out.println("Using DO WHILE loop");
+	i=0;
+	count=1;
+	do
+	{
+		if(i%2==0) 
+		{
+			System.out.println(i);
+			count++;
+		}
+		i++;
+	}while(count<=n);
+}
+}*/
+
+/* 
+   //Write a program to check if a number is palindrom or not
+   //Write a program to check wether the number is prime or not 
+   //Write a program to check if the given number is a perfect square
+   //Write a program to print the elements of an array on even position
+   Write a program to find the smallest element in an array
+   //Write a program to print * pattern dynamic rows
+*/
+
+
+/*
+//Write a program to print the elements of an array on even position
+import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter total number of elements n: ");
+	int n = in.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<n;i++)
+	{
+		arr[i]=in.nextInt();
+	}
+	System.out.println("Elements in even position of the given array: ");
+	for(int i=0;i<n;i++)
+	{
+		if(i%2==0)
+		{
+			System.out.print(arr[i]+" ");
+		}
+	}
+}
+}
+*/
+
+/*
+//Write a program to check wether the number is prime or not 
+import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the value of n: ");
+	int n = in.nextInt();
+	boolean flag=false;
+	for(int i=2;i<=n/2;i++)
+	{
+		if(n%i==0)
+		{
+			flag=true;
+			break;
+		}
+	}
+	if(!flag)
+		System.out.print("Entered value is a prime number!");
+	else
+		System.out.print("Entered value is not a prime number!");
+	
+}
+}
+*/
+
+/*
+//Write a program to check if a number is palindrom or not
+import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the number: ");
+	int n = in.nextInt();
+	int r, rev=0,temp;
+	temp=n;
+	while(n>0)
+	{    
+	  r=n%10;  //getting remainder  
+	  rev=(rev*10)+r;    
+	  n=n/10;    
+	}    
+	if(temp==rev)    
+		System.out.println("palindrome");    
+	else    
+		System.out.println("not palindrome");    
+}
+}
+*/
+
+/*
+//Write a program to check if the given number is a perfect square
+import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the number: ");
+	int n = in.nextInt();
+	int sr = (int)Math.sqrt(n);
+	if((sr * sr)==n)
+		System.out.println("Yes");
+	else
+		System.out.println("No");
+}
+}
+*/
+
+
+/*
+//Write a program to print * pattern dynamic rows
+import java.util.Scanner;
+public class test {
+public static void main(String[] args) 
+{
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter the number: ");
+	int n = in.nextInt();
+	int i, j;  
+    for(i=0; i<n; i++) 
+    { 
+    	for(j=2*(n-i); j>=0; j--)  
+        {           
+            System.out.print(" ");
+        } 
+        for(j=0; j<=i; j++)
+        {       
+            System.out.print("* "); 
+        }           
+        System.out.println(); 
+    }  
+}
+}
+*/
+
+/*Write a program to add two int, 3 int, 2 floats, 1int 1 float, 1int 1float 1double create a class calculate to perform the operations stated above using function overloading name the functions as add*/
+
+
+
+/*import java.io.*;
+import java.util.*;
+
+class calculate{
+    
+    void add(int a, int b){
+	int res = a+b;
+	System.out.println(res);
+    }
+
+    void add(int a, int b, int c){
+	int res = a+b+c;
+	System.out.println(res);
+    }	
+
+    void add(float a, float b){
+	float res = a+b;
+	System.out.println(res);
+    }
+
+    void add(int a, float b){
+	float res = a+b;
+	System.out.println(res);
+    }
+
+    void add(int a, float b, double c){
+	double res = a+b+c;
+	System.out.println(res);
+    }
+
+}
+
+public class test {
+
+    public static void main(String[] args) {
+    	calculate c=new calculate();
+	c.add(1,1);
+	c.add(1,1,1);
+	c.add(2.5f,2.5f);
+	c.add(2,1.5f);
+	c.add(2,2.5f,2.5);
+    }
+}*/
+
+
+/*Write a program to create a enum day with the enumuration constant as days of a week, create a class check 
+ with one constructor which will take object as an argument declare a data me,ber D of type enum and a function
+ void print() which uses the switch case to print the day selected otherwise it will print not a day of the 
+ week create a main method class to take string input from the user as the day of the week pass this string
+ as an argument to the constructor and call the print function to print the appropriate day entered by 
+ the user */ 
+
+/*import java.util.*;
+import java.lang.*;
+
+enum day{
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY;
+}
+
+class check{
+	day D ;
+
+	check(day S) {
+		D=S;
+		print();
+	}
+	void print() {
+		switch(D) {
+			case SUNDAY: System.out.println("SUNDAY IS THE 1ST DAY OF THE WEEK!");break;
+			case MONDAY: System.out.println("MONDAY IS THE 2ND DAY OF THE WEEK!");break;
+			case TUESDAY: System.out.println("TUESDAY IS THE 3RD DAY OF THE WEEK!");break;
+			case WEDNESDAY: System.out.println("WEDNESDAY IS THE 4TH DAY OF THE WEEK!");break;
+			case THURSDAY: System.out.println("THURSDAY IS THE 5TH DAY OF THE WEEK!");break;
+			case FRIDAY: System.out.println("FRIDAY IS THE 6TH DAY OF THE WEEK!");break;
+			case SATURDAY: System.out.println("SATURDAY IS THE 7TH DAY OF THE WEEK!");break;
+			default: System.out.println("Not a day of the week!");
+		}
+	}
+}
+
+public class test {
+
+    public static void main(String[] args) {
+    	Scanner in = new Scanner(System.in);
+    	System.out.println("Enter the string: ");
+    	String s = in.nextLine();
+    	check c = new check(day.valueOf(s));
+    }
+} */  
+
+
+// import java.io.*;
+// import java.util.*;
+// import java.math.*;
+
+// class MyCalculator { 
+//     public static long power(int a,int b) throws Exception{
+//         long num1 = a;
+//         long num2 = b;
+//              if(num1==0 && num2==0)  {
+//                  throw new Exception("n and p should not be zero.");
+//              }
+//              else if(num1<0 || num2 <0) {
+//              throw new Exception("n or p should not be negative.");
+//              }
+//              else
+//              {
+//                  long res = (long)Math.pow(num1,num2);return res;
+//              }
+      
+//     }
+   
+  
+// }
+
+// public class Solution {
+//     public static final MyCalculator my_calculator = new MyCalculator();
+//     public static final Scanner in = new Scanner(System.in);
+    
+//     public static void main(String[] args) {
+//         while (in .hasNextInt()) {
+//             int n = in .nextInt();
+//             int p = in .nextInt();
+            
+//             try {
+//                 System.out.println(my_calculator.power(n, p));
+//             } catch (Exception e) {
+//                 System.out.println(e);
+//             }
+//         }
+//     }
+// }
+
+
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         try {
+//             int num1 = scanner.nextInt();
+//             int num2 = scanner.nextInt();
+
+//             if (num2 == 0) {
+//                 throw new ArithmeticException("/ by zero");
+//             }
+
+//             int result = num1 / num2;
+//             System.out.println(result);
+
+//         } 
+//         catch (ArithmeticException e) {
+//             System.out.println(e);
+
+//         } 
+//         catch (Exception e) {
+//             System.out.println("java.util.InputMismatchException");
+//         }
+//     }
+// }
+
